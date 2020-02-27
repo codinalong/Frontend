@@ -18,6 +18,7 @@ class Login extends Component {
   }
 
   handleSignIn = event => {
+    console.log(typeof event)
     event.preventDefault()
     
     const { inputEmail, inputPassword } = event.target
@@ -58,9 +59,9 @@ class Login extends Component {
           <div className={ !this.state.showErrorMessage ? 'login-auth-error login-hide-auth-error' : 'login-auth-error' }>
             Invalid Username or Password
           </div>
-          <Link to="/"></Link>
           <button className="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </form>
+        <Link to="/"><button></button></Link>
       </div>
     )
   }

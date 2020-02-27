@@ -5,6 +5,8 @@ import { Route, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 
 const AuthenticatedRoute = props => {
+  console.log(typeof props.component)
+  console.log(props.component)
     const {
     authentication: {
       pending,

@@ -1,4 +1,28 @@
 .container {
-  display: grid;
-  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container div{
+  border: 1px #ccc solid;
+  padding:10px;
+  border-style: groove;
+  box-shadow: 0 0 0 3px skyblue;
+}
+
+.leftColumn {
+  margin-right: 10px;
+  flex: 2;
+  margin-bottom: 5px;
+  order: 1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.rightColumn {
+  flex: 3;
+  order: 2;
 }
